@@ -1,0 +1,175 @@
+/* start skitter slider button */
+
+header {
+    .label_skitter {
+        .skitter-btn {
+            margin-top: 20px;
+            .btn {
+                display: inline;
+                background: $mainColor;
+                color: $mainBackground;
+                padding: 10px 30px;
+                border-radius: 20px;
+                transition: $transition3s;
+                &:hover {
+                    background: $secColor;
+                }
+            }
+        }
+    }
+}
+
+
+/* end skitter slider button */
+
+
+/* start carousel button */
+
+.hidden-carousel {
+    .carousel {
+        .carousel-caption {
+            .carousel-btn {
+                margin-top: 20px;
+                @media(min-width: $phone)and(max-width: $small) {
+                    margin-top: 0;
+                }
+                .btn {
+                    @media(min-width: $phone) and (max-width: $small) {
+                        display: inline;
+                        background: $mainColor;
+                        color: $mainBackground;
+                        padding: 5px;
+                        font-size: 10px;
+                    }
+                    @media(min-width: $small) and(max-width: $xLarge) {
+                        display: inline;
+                        background: $mainColor;
+                        color: $mainBackground;
+                        padding: 10px;
+                        font-size: 15px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* end carousel button */
+
+
+/* start navbar buttons */
+
+.navbar {
+    .form-inline {
+        margin-right: 25px;
+        .btn {
+            @include navButton;
+        }
+    }
+}
+
+
+/* end navbar buttons */
+
+
+/* start services button */
+
+.our-services {
+    .service {
+        .btn {
+            color: $mainBackground;
+            transition: $transition3s;
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+    }
+}
+
+
+/* end services button */
+
+
+/* start expert button */
+
+.experts {
+    .expert-btn {
+        @include expertButton;
+    }
+}
+
+
+/* end expert button */
+
+
+/* start news heading */
+
+.news {
+    .news-btn {
+        @media(min-width: $xLarge) {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .btn {
+            color: $mainBackground;
+            border: 1px solid $mainBackground;
+            padding: 10px 30px;
+            transition: $transition3s;
+            &:hover {
+                background: $mainBackground;
+                color: $secColor;
+            }
+        }
+    }
+}
+
+
+/* end news heading */
+
+/////////////////////////////////////////////   about-us  ///////////////////////////////////////////////
+
+/* satrt help button */
+
+.help {
+    .help-btn {
+        margin-top: 11%;
+        text-align: left !important;
+        @media(min-width: $phone) and(max-width: $large) {
+            margin-top: 0;
+            text-align: right !important;
+        }
+        .btn {
+            color: $mainBackground;
+            border: 1px solid $mainBackground;
+            padding: 10px 30px;
+            transition: $transition3s;
+            &:hover {
+                background: $mainBackground;
+                color: $darkColor;
+            }
+        }
+    }
+}
+
+
+/* end help button */
+
+/////////////////////////////////////////////   record-info  ///////////////////////////////////////////////
+.record {
+    form {
+        .btn-block {
+            @include formButton;
+        }
+    }
+}
+
+/////////////////////////////////////////////   contact-us  ///////////////////////////////////////////////
+.contact-us-form {
+    form {
+        .btn-block {
+            @include formButton;
+        }
+    }
+}

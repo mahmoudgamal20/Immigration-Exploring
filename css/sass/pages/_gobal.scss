@@ -1,0 +1,140 @@
+/* start global */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Almarai', sans-serif;
+}
+
+h2 {
+    @media(min-width: $phone)and(max-width: $small) {
+        font: {
+            size: 25px;
+        }
+    }
+}
+
+hr {
+    margin: 0;
+}
+
+
+/* start scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: rgba($borderColor, 0.2);
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgba($secColor, 0.8);
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgba($secColor, 1);
+}
+
+
+/* end scrollbar */
+
+
+/* start scrollup */
+
+.scrollup {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: $mainColor;
+    color: $mainBackground;
+    border-radius: 5px;
+    z-index: 999;
+    cursor: pointer;
+    animation: animated 2s infinite ease;
+    display: none;
+}
+
+@keyframes animated {
+    0% {
+        bottom: 40px;
+    }
+    50% {
+        bottom: 50px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
+
+/* end scrollup */
+
+
+/* start hegra-countries */
+
+.hegra-countries {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba($darkColor, .9);
+    color: $mainBackground;
+    width: auto;
+    height: 100%;
+    transform: translateX(125%);
+    transition: $transition3s;
+    z-index: 999;
+    padding: $mainMargin/2;
+    i {
+        cursor: pointer;
+        margin-top: 20px;
+        font: {
+            size: 25px;
+        }
+        &:hover {
+            color: $mainColor;
+        }
+    }
+    h3 {
+        // styled in headings sheet
+    }
+    ul {
+        list-style-type: " - ";
+        li {
+            padding-bottom: 25px;
+            a {
+                color: $mainBackground;
+                transition: $transition3s;
+                &:hover {
+                    @include mainHover;
+                }
+            }
+        }
+    }
+}
+
+
+/* end hegra-countries */
+
+
+/* end global */

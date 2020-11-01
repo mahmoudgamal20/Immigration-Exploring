@@ -1,0 +1,97 @@
+// the elements that are before team work section are styled in _homepage.scss
+
+/* start team work */
+
+.team-work {
+    background: $secBackground;
+    padding: $mainMargin/2;
+    h2 {
+        // styled in headings sheet
+    }
+    .card {
+        filter: $dropShadow2;
+        margin-bottom: 30px;
+        border: 0;
+        .img-card {
+            overflow: hidden;
+            &:hover img {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+            img {
+                transform: scale(1);
+                transition: $transition3s;
+            }
+        }
+        .card-body {
+            .card-text {
+                @include hegraSpan;
+            }
+        }
+    }
+}
+
+
+/* end team work */
+
+
+/* start help */
+
+.help {
+    background: $darkColor;
+    padding: $mainMargin/2;
+    span {
+        @include serviceSpan;
+    }
+    .help-info {
+        h3 {
+            // styled in headings sheet
+        }
+    }
+    .help-btn {}
+}
+
+
+/* end help */
+
+
+/* start choose us */
+
+.choose-us {
+    margin-top: $mainMargin;
+    background-image: url(../img/world.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 700px;
+    .choose-overlay {
+        @include chooseOverlay;
+        z-index: -2;
+        span {
+            @include serviceSpan;
+        }
+        h2 {
+            // styled in headings sheet
+        }
+        .choose {
+            color: $darkColor;
+            background: $mainBackground;
+            padding: 20px 35px;
+            width: auto;
+            display: inline-block;
+            margin-top: 30px;
+            i {
+                color: #ffe05d;
+                background: rgba($darkColor, 1);
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+
+/* end choose us */

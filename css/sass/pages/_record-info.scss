@@ -1,0 +1,63 @@
+/* start record */
+
+.record {
+    padding: $mainMargin 20px;
+    background: $secBackground;
+    span {
+        @include mainSpan;
+    }
+    h2 {
+        // styled in headings sheet
+    }
+    form {
+        .form-row {
+            .form-control {
+                @include mainFormControl;
+            }
+        }
+        .radios {
+            margin-bottom: 20px;
+            label {
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+                &:not(:first-child) {
+                    width: 30px;
+                }
+            }
+            .custom-radio {
+                margin-bottom: 10px;
+            }
+        }
+        .checks {
+            margin-bottom: 20px;
+            label {
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+                &:not(:first-child) {
+                    width: 60px;
+                }
+            }
+            .custom-checkbox {
+                margin-bottom: 10px;
+            }
+        }
+        .btn-block {
+            // styled in buttons sheet
+        }
+    }
+}
+
+
+/* end record */
+
+
+/* start more-info */
+
+.more-info {
+    // styled in contact-us.scss page
+}
+
+
+/* end more-info */

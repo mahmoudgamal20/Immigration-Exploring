@@ -1,0 +1,1733 @@
+/* colors */
+/* transition */
+/* font-family */
+/* font-weight */
+/* margin */
+/* drop shadow */
+/* media queries */
+/* nav button */
+/* center */
+/* main hover */
+/* main span */
+/* main heading */
+/* main paragraph */
+/*  main media */
+/* service overlay */
+/* service span */
+/* service heading */
+/* service paragraph */
+/* expert heading */
+/* expert button */
+/* countries heading */
+/* testimonials heading */
+/* president overlay */
+/* responsive iframe map */
+/***************** hegra business  *******************/
+/* spans for hegra pages */
+/*************** about us ********************/
+/* overlay for choose page */
+/*************** record-info ********************/
+/* form control record-info page */
+/*************** contact us ********************/
+/* responsive contact-us page iframe map */
+/* start global */
+@import url("https://fonts.googleapis.com/css2?family=Almarai&family=Harmattan&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Almarai', sans-serif;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+
+hr {
+  margin: 0;
+}
+
+/* start scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(204, 204, 204, 0.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 52, 97, 0.8);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0f3461;
+}
+
+/* end scrollbar */
+/* start scrollup */
+.scrollup {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #E8110F;
+  color: #ffffff;
+  border-radius: 5px;
+  z-index: 999;
+  cursor: pointer;
+  -webkit-animation: animated 2s infinite ease;
+          animation: animated 2s infinite ease;
+  display: none;
+}
+
+@-webkit-keyframes animated {
+  0% {
+    bottom: 40px;
+  }
+  50% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 30px;
+  }
+}
+
+@keyframes animated {
+  0% {
+    bottom: 40px;
+  }
+  50% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 30px;
+  }
+}
+
+/* end scrollup */
+/* start hegra-countries */
+.hegra-countries {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(28, 43, 45, 0.9);
+  color: #ffffff;
+  width: auto;
+  height: 100%;
+  -webkit-transform: translateX(125%);
+          transform: translateX(125%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  padding: 50px;
+}
+
+.hegra-countries i {
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.hegra-countries i:hover {
+  color: #E8110F;
+}
+
+.hegra-countries ul {
+  list-style-type: " - ";
+}
+
+.hegra-countries ul li {
+  padding-bottom: 25px;
+}
+
+.hegra-countries ul li a {
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hegra-countries ul li a:hover {
+  text-decoration: none;
+  color: #f9813a;
+}
+
+/* end hegra-countries */
+/* end global */
+/* start header */
+header {
+  z-index: 5;
+  position: relative;
+}
+
+header .skitter {
+  right: 0;
+}
+
+header .skitter .label_skitter {
+  bottom: 35%;
+  background: none;
+  display: inline-block;
+}
+
+/* end header */
+/* start hidden carousel */
+.hidden-carousel .carousel .carousel-control-prev-icon {
+  background-image: url(../img/previous-arrow.svg);
+}
+
+.hidden-carousel .carousel .carousel-control-next-icon {
+  background-image: url(../img/next-arrow.svg);
+}
+
+/* end hiddden carousel */
+/* start hegra header */
+.hegra {
+  background-image: url(../img/hegra-business.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hegra .hegra-overlay {
+  min-height: 600px;
+  width: 100%;
+  background: rgba(28, 43, 45, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hegra .hegra-overlay .hegra-head span {
+  color: #f9813a;
+}
+
+/* end hegra header */
+/* start address */
+.address {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  background: #0f3461;
+  width: 100%;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Harmattan";
+}
+
+.address ul {
+  margin: 0;
+  display: inline;
+}
+
+.address ul li {
+  position: relative;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.address ul li::after {
+  content: " | ";
+  position: absolute;
+  left: -10px;
+}
+
+.address ul li:last-of-type::after {
+  content: " ";
+}
+
+.address ul li i {
+  margin-left: 3px;
+}
+
+.address ul li a {
+  color: #ffffff;
+  font-size: 17px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.address ul li a:hover {
+  text-decoration: none;
+  color: #f9813a;
+}
+
+.address .nav-social {
+  display: inline;
+  margin-right: 20px;
+}
+
+.address .nav-social a {
+  margin-left: 10px;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.address .nav-social a:hover {
+  text-decoration: none;
+  color: #f9813a;
+}
+
+/* end address */
+/* start navbar */
+.navbar {
+  top: 7%;
+  z-index: 555;
+  width: 100%;
+  background: rgba(15, 52, 97, 0.5);
+  padding: 25px;
+}
+
+@media (min-width: 500px) and (max-width: 1200px) {
+  .navbar {
+    top: 0;
+    padding: 15px;
+    background: #0f3461;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .navbar {
+    top: 0;
+    padding: 5px;
+    background: #0f3461;
+  }
+}
+
+.navbar .navbar-brand {
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand:hover {
+  text-decoration: none;
+  color: #f9813a;
+}
+
+.navbar .navbar-toggler {
+  margin-left: 15px;
+  border: 1px solid #777777;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url(../img/menu-bar.svg);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  margin-right: 15px;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  text-decoration: none;
+  color: #f9813a;
+}
+
+.navbar .navbar-nav .dropdown-menu {
+  top: 65px;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+  color: #777777;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover {
+  background: #0f3461;
+  color: #ffffff;
+}
+
+/* end navbar */
+/* start about-us */
+.about-us {
+  margin-top: 100px;
+}
+
+.about-us .about-info span {
+  color: #E8110F;
+  font-family: "Harmattan";
+  font-size: 20px;
+}
+
+.about-us .about-info p {
+  color: #777777;
+  line-height: 1.7;
+}
+
+.about-us .about-info ul li .media {
+  margin: 30px 0;
+  position: relative;
+}
+
+.about-us .about-info ul li .media:hover .i-square {
+  width: 60px;
+}
+
+.about-us .about-info ul li .media .i-square {
+  position: absolute;
+  top: -7px;
+  right: 3px;
+  width: 30px;
+  height: 80px;
+  border: 2px solid #cccccc;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.about-us .about-info ul li .media i {
+  padding: 15px;
+  color: #f9813a;
+}
+
+.about-us .about-info ul li .media .media-body h5 {
+  color: #0f3461;
+}
+
+.about-us .about-img {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* end about-us */
+/* start services */
+.our-services {
+  margin-top: 100px;
+  background-image: url(../img/services-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 700px;
+}
+
+.our-services .services-overlay {
+  min-height: 700px;
+  width: 100%;
+  background: rgba(15, 52, 97, 0.9);
+  padding: 100px 0;
+}
+
+.our-services .services-overlay span {
+  color: #f9813a;
+  font-family: "Harmattan";
+  font-size: 25px;
+}
+
+.our-services .services-overlay .service {
+  padding: 25px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  background: rgba(15, 52, 97, 0.7);
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(28, 43, 45, 0.5));
+          filter: drop-shadow(0px 0px 5px rgba(28, 43, 45, 0.5));
+  margin-bottom: 30px;
+}
+
+.our-services .services-overlay .service span {
+  position: absolute;
+  background-color: #cccccc;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.our-services .services-overlay .service .one {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+
+.our-services .services-overlay .service .two {
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+
+.our-services .services-overlay .service .three {
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+}
+
+.our-services .services-overlay .service .four {
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+}
+
+.our-services .services-overlay .service:hover .one,
+.our-services .services-overlay .service:hover .three {
+  width: 1px;
+  height: 100%;
+}
+
+.our-services .services-overlay .service:hover .two,
+.our-services .services-overlay .service:hover .four {
+  width: 100%;
+  height: 1px;
+}
+
+.our-services .services-overlay .service i {
+  color: #f9813a;
+}
+
+.our-services .services-overlay .service h5 {
+  margin: 20px 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.our-services .services-overlay .service p {
+  color: #cccccc;
+  line-height: 1.8;
+  font-family: "Harmattan";
+  font-size: 18px;
+}
+
+/* end services */
+/* start experts */
+.experts {
+  margin-top: -80px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .experts {
+    margin-top: 50px;
+    padding: 15px;
+  }
+}
+
+.experts .ex-row {
+  background: #1c2b2d;
+  padding: 35px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.experts .ex-row .expert-info p {
+  font-family: "Harmattan";
+  font-size: 20px;
+}
+
+/* end experts */
+/* start countries */
+.countries {
+  margin-top: 100px;
+}
+
+.countries span {
+  color: #E8110F;
+  font-family: "Harmattan";
+  font-size: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .countries .slick {
+    overflow: hidden;
+  }
+}
+
+.countries .slick .card {
+  width: 30%;
+  margin: 0 30px;
+  border: 0;
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(204, 204, 204, 0.5));
+          filter: drop-shadow(0px 0px 10px rgba(204, 204, 204, 0.5));
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.countries .slick .card:hover {
+  margin-top: -20px;
+}
+
+.countries .slick .card .card-body .card-title {
+  color: #0f3461;
+  font-family: "Harmattan";
+  font-size: 23px;
+}
+
+/* end countries */
+/* start testimonials */
+.testimonials {
+  margin-top: 100px;
+  background: rgba(204, 204, 204, 0.2);
+  padding: 35px;
+  /* start counter */
+  /* end counter */
+}
+
+.testimonials .testim-info {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(204, 204, 204, 0.5));
+          filter: drop-shadow(0px 0px 10px rgba(204, 204, 204, 0.5));
+  position: relative;
+}
+
+.testimonials .testim-info span {
+  color: #E8110F;
+  font-family: "Harmattan";
+  font-size: 20px;
+}
+
+.testimonials .testim-info img[alt=quote] {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 20%;
+  left: 30px;
+  z-index: -1;
+}
+
+.testimonials .testim-info .carousel {
+  margin-top: 50px;
+}
+
+.testimonials .testim-info .carousel .carousel-indicators {
+  bottom: -35px;
+  right: -35px;
+}
+
+.testimonials .testim-info .carousel .carousel-indicators li {
+  background-color: #0f3461;
+}
+
+.testimonials .testim-info .carousel .carousel-inner .carousel-item q {
+  display: block;
+  color: #777777;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: "Harmattan";
+}
+
+.testimonials .testim-info .carousel .carousel-inner .carousel-item img {
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+}
+
+.testimonials .testim-info .carousel .carousel-inner .carousel-item h5 {
+  color: #1c2b2d;
+  margin-top: 20px;
+}
+
+.testimonials .testim-info .carousel .carousel-inner .carousel-item blockquote {
+  color: #777777;
+}
+
+.testimonials .counter {
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+.testimonials .counter .count {
+  padding: 25px;
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(204, 204, 204, 0.5));
+          filter: drop-shadow(0px 0px 10px rgba(204, 204, 204, 0.5));
+}
+
+.testimonials .counter .count p {
+  color: #f9813a;
+  margin-bottom: 0px;
+  font-size: 45px;
+  font-weight: 900;
+  font-family: "Harmattan";
+}
+
+.testimonials .counter .count span {
+  color: #0f3461;
+  font-size: 20px;
+}
+
+/* end testimonials */
+/* start news  */
+.news {
+  padding: 50px;
+  background: rgba(15, 52, 97, 0.9);
+}
+
+.news .news-info span {
+  color: #f9813a;
+  font-family: "Harmattan";
+  font-size: 25px;
+}
+
+.news .news-vid {
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(28, 43, 45, 0.5));
+          filter: drop-shadow(0px 0px 5px rgba(28, 43, 45, 0.5));
+  padding-bottom: 50px;
+  position: relative;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .news .news-vid {
+    margin-top: 30px;
+  }
+}
+
+.news .news-vid img {
+  position: absolute;
+  top: 0;
+  left: -17%;
+  z-index: -1;
+  -webkit-animation: moving 5s infinite linear;
+          animation: moving 5s infinite linear;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .news .news-vid img {
+    display: none;
+  }
+}
+
+@-webkit-keyframes moving {
+  0% {
+    top: 0;
+    left: -17%;
+  }
+  100% {
+    top: -5%;
+    left: 10%;
+    opacity: 0.2;
+  }
+}
+
+@keyframes moving {
+  0% {
+    top: 0;
+    left: -17%;
+  }
+  100% {
+    top: -5%;
+    left: 10%;
+    opacity: 0.2;
+  }
+}
+
+/* end news */
+/* start license */
+.license {
+  margin-top: 100px;
+}
+
+.license .license-info span {
+  color: #E8110F;
+  font-family: "Harmattan";
+  font-size: 20px;
+}
+
+.license .license-info ul li .media {
+  margin: 30px 0;
+  position: relative;
+}
+
+.license .license-info ul li .media:hover .i-square {
+  width: 60px;
+}
+
+.license .license-info ul li .media .i-square {
+  position: absolute;
+  top: -7px;
+  right: 3px;
+  width: 30px;
+  height: 80px;
+  border: 2px solid #cccccc;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.license .license-info ul li .media i {
+  padding: 15px;
+  color: #f9813a;
+}
+
+.license .license-info ul li .media .media-body h5 {
+  color: #0f3461;
+}
+
+/* end license */
+/* start videos */
+.videos {
+  margin-top: 100px;
+  background: rgba(204, 204, 204, 0.2);
+  padding: 35px;
+}
+
+.videos .video {
+  margin-bottom: 30px;
+}
+
+/* end videos */
+/* start hegra  */
+/* end hegra  */
+/* start hegra program */
+.hegra-program {
+  margin-top: 50px;
+}
+
+.hegra-program .hegra-vid {
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(28, 43, 45, 0.5));
+          filter: drop-shadow(0px 0px 5px rgba(28, 43, 45, 0.5));
+  padding-bottom: 50px;
+}
+
+.hegra-program .hegra-info span {
+  color: #777777;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 20px;
+  font-family: "Harmattan";
+}
+
+.hegra-program .hegra-info p {
+  color: #777777;
+  line-height: 1.7;
+}
+
+.hegra-program .hegra-info ul {
+  list-style: arabic-indic;
+}
+
+.hegra-program .hegra-info ul li {
+  padding-bottom: 20px;
+  color: #0f3461;
+}
+
+/* end hegra program */
+/* start hegra  */
+/* end hegra  */
+/* start hegra workers */
+.hegra-workers {
+  margin: 50px 0;
+}
+
+.hegra-workers .hegra-vid {
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(28, 43, 45, 0.5));
+          filter: drop-shadow(0px 0px 5px rgba(28, 43, 45, 0.5));
+  padding-bottom: 50px;
+}
+
+.hegra-workers .hegra-info p {
+  color: #777777;
+  line-height: 1.7;
+}
+
+.hegra-workers .excellent-workers {
+  width: 70%;
+  background: #ffffff;
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(204, 204, 204, 0.5));
+          filter: drop-shadow(0px 0px 10px rgba(204, 204, 204, 0.5));
+  padding: 25px;
+  margin: 30px 0;
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .hegra-workers .excellent-workers {
+    width: 100%;
+  }
+}
+
+.hegra-workers .excellent-workers .ex-workers p {
+  color: #777777;
+  line-height: 1.7;
+}
+
+.hegra-workers .hegra-requirements .hegra-collapse p .btn {
+  color: #0f3461;
+  font-family: "Harmattan";
+  font-size: 20px;
+}
+
+.hegra-workers .hegra-requirements .hegra-collapse p .btn:before {
+  content: "\f055";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+}
+
+/* end hegra workers */
+/* start team work */
+.team-work {
+  background: rgba(204, 204, 204, 0.2);
+  padding: 50px;
+}
+
+.team-work .card {
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(204, 204, 204, 0.5));
+          filter: drop-shadow(0px 0px 10px rgba(204, 204, 204, 0.5));
+  margin-bottom: 30px;
+  border: 0;
+}
+
+.team-work .card .img-card {
+  overflow: hidden;
+}
+
+.team-work .card .img-card:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.team-work .card .img-card img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.team-work .card .card-body .card-text {
+  color: #777777;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 20px;
+  font-family: "Harmattan";
+}
+
+/* end team work */
+/* start help */
+.help {
+  background: #1c2b2d;
+  padding: 50px;
+}
+
+.help span {
+  color: #f9813a;
+  font-family: "Harmattan";
+  font-size: 25px;
+}
+
+/* end help */
+/* start choose us */
+.choose-us {
+  margin-top: 100px;
+  background-image: url(../img/world.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 700px;
+}
+
+.choose-us .choose-overlay {
+  min-height: 700px;
+  width: 100%;
+  background: rgba(28, 43, 45, 0.8);
+  padding: 100px 0;
+  z-index: -2;
+}
+
+.choose-us .choose-overlay span {
+  color: #f9813a;
+  font-family: "Harmattan";
+  font-size: 25px;
+}
+
+.choose-us .choose-overlay .choose {
+  color: #1c2b2d;
+  background: #ffffff;
+  padding: 20px 35px;
+  width: auto;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.choose-us .choose-overlay .choose i {
+  color: #ffe05d;
+  background: #1c2b2d;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+/* end choose us */
+/* start record */
+.record {
+  padding: 100px 20px;
+  background: rgba(204, 204, 204, 0.2);
+}
+
+.record span {
+  color: #E8110F;
+  font-family: "Harmattan";
+  font-size: 20px;
+}
+
+.record form .form-row .form-control {
+  margin-bottom: 20px;
+  color: #0f3461;
+  height: 52px;
+}
+
+.record form .form-row .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.record form .radios {
+  margin-bottom: 20px;
+}
+
+.record form .radios label:first-child {
+  margin-bottom: 20px;
+}
+
+.record form .radios label:not(:first-child) {
+  width: 30px;
+}
+
+.record form .radios .custom-radio {
+  margin-bottom: 10px;
+}
+
+.record form .checks {
+  margin-bottom: 20px;
+}
+
+.record form .checks label:first-child {
+  margin-bottom: 20px;
+}
+
+.record form .checks label:not(:first-child) {
+  width: 60px;
+}
+
+.record form .checks .custom-checkbox {
+  margin-bottom: 10px;
+}
+
+/* end record */
+/* start more-info */
+/* end more-info */
+/* start contact-us map */
+.contact-us-map .map {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%;
+  padding-bottom: 0;
+}
+
+.contact-us-map .map .responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .contact-us-map .map .responsive-iframe {
+    height: 50%;
+  }
+}
+
+/* end contact-us map */
+/* start contact-us form */
+.contact-us-form {
+  margin: 100px 0;
+}
+
+.contact-us-form form .form-row .form-control {
+  margin-bottom: 20px;
+  color: #0f3461;
+  height: 52px;
+}
+
+.contact-us-form form .form-row .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact-us-form form .form-row .area {
+  height: 100px;
+}
+
+/* end contact-us form */
+/* start more-info */
+.more-info {
+  margin: 50px 0;
+}
+
+.more-info .media {
+  background: #1c2b2d;
+  color: #ffffff;
+  padding: 15px 5px;
+}
+
+.more-info .media i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: rgba(204, 204, 204, 0.2);
+}
+
+.more-info .media .media-body {
+  margin-right: 15px;
+}
+
+.more-info .media .media-body p,
+.more-info .media .media-body span {
+  color: #cccccc;
+  font-size: 20px;
+  font-family: "Harmattan";
+}
+
+.more-info .second {
+  background: #0f3461;
+}
+
+/* end more-info */
+/* start skitter slider heading */
+header .label_skitter h1 {
+  color: #1c2b2d;
+  background: #ffffff;
+  padding: 20px;
+  display: inline-block;
+}
+
+header .label_skitter h1 span {
+  color: #0f3461;
+}
+
+/* end skitter slider heading */
+/* start carousel heading */
+@media (min-width: 1200px) {
+  .hidden-carousel .carousel .carousel-caption {
+    z-index: -1;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .hidden-carousel .carousel .carousel-caption {
+    bottom: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .hidden-carousel .carousel .carousel-caption h4 {
+    font-size: 16px;
+    background: #ffffff;
+    color: #1c2b2d;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1200px) {
+  .hidden-carousel .carousel .carousel-caption h4 {
+    color: #1c2b2d;
+    background: #ffffff;
+    padding: 10px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+  .hidden-carousel .carousel .carousel-caption h4 span {
+    color: #E8110F;
+  }
+}
+
+/* end carousel heading */
+/* start about-us heading */
+.about-us .about-info h2 {
+  margin: 30px 0;
+  color: #0f3461;
+}
+
+/* end about-us heading */
+/* start services heading */
+.our-services h2 {
+  margin: 10px 0 50px;
+  color: #ffffff;
+}
+
+/* end services heading */
+/* start expert heading */
+.experts .expert-info h2 {
+  margin: 30px 0;
+  color: #ffffff;
+}
+
+/* end expert heading */
+/* start countries heading */
+.countries h2 {
+  margin: 10px 0 60px;
+  color: #0f3461;
+}
+
+/* end countries heading */
+/* start testimonials heading */
+.testimonials .testim-info h2 {
+  margin: 10px 0 30px;
+  color: #0f3461;
+}
+
+/* end testimonials heading */
+/* start news heading */
+.news .news-info h2 {
+  margin: 10px 0 50px;
+  color: #ffffff;
+}
+
+/* end news heading */
+/* start license heading */
+.license .license-info h2 {
+  margin: 30px 0;
+  color: #0f3461;
+}
+
+/* end license heading */
+/* start videos heading */
+.videos h2 {
+  margin: 30px 0;
+  color: #0f3461;
+}
+
+/* end videos heading */
+/* start hegra-business heading */
+.hegra h1 {
+  margin: 10px 0 50px;
+  color: #ffffff;
+}
+
+/* end hegra-business heading */
+/* start hegra-program heading */
+.hegra-program h2 {
+  margin: 30px 0;
+  color: #0f3461;
+}
+
+/* end hegra-program heading */
+/* start hegra-workers heading */
+.hegra-workers h2 {
+  margin: 30px 0;
+  color: #0f3461;
+}
+
+.hegra-workers .ex-workers h4 {
+  margin: 30px 0;
+  color: #0f3461;
+}
+
+/* end hegra-workers heading */
+/* start hegra-countries */
+.hegra-countries h3 {
+  margin: 10px 0 50px;
+  color: #ffffff;
+}
+
+/* end hegra-countries */
+/* start team work heading */
+.team-work h2 {
+  margin: 30px 0;
+  color: #0f3461;
+}
+
+/* end team work heading */
+/* start help heading */
+.help .help-info h3 {
+  margin: 30px 0;
+  color: #ffffff;
+}
+
+/* end help heading */
+/* start choose us heading */
+.choose-us .choose-overlay {
+  min-height: 700px;
+  width: 100%;
+  background: rgba(28, 43, 45, 0.8);
+  padding: 100px 0;
+}
+
+.choose-us .choose-overlay h2 {
+  margin: 10px 0 50px;
+  color: #ffffff;
+}
+
+/* end choose us heading */
+.record h2 {
+  margin: 30px 0;
+  color: #0f3461;
+}
+
+.contact-us-form h2 {
+  margin: 30px 0;
+  color: #0f3461;
+}
+
+/* start skitter slider button */
+header .label_skitter .skitter-btn {
+  margin-top: 20px;
+}
+
+header .label_skitter .skitter-btn .btn {
+  display: inline;
+  background: #E8110F;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .label_skitter .skitter-btn .btn:hover {
+  background: #0f3461;
+}
+
+/* end skitter slider button */
+/* start carousel button */
+.hidden-carousel .carousel .carousel-caption .carousel-btn {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .hidden-carousel .carousel .carousel-caption .carousel-btn {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .hidden-carousel .carousel .carousel-caption .carousel-btn .btn {
+    display: inline;
+    background: #E8110F;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1200px) {
+  .hidden-carousel .carousel .carousel-caption .carousel-btn .btn {
+    display: inline;
+    background: #E8110F;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+}
+
+/* end carousel button */
+/* start navbar buttons */
+.navbar .form-inline {
+  margin-right: 25px;
+}
+
+.navbar .form-inline .btn {
+  background: transparent;
+  padding: 10px 30px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  margin-left: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .navbar .form-inline .btn {
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+}
+
+.navbar .form-inline .btn:hover {
+  background: #1c2b2d;
+  border: 1px solid #1c2b2d;
+}
+
+/* end navbar buttons */
+/* start services button */
+.our-services .service .btn {
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.our-services .service .btn:hover {
+  color: #f9813a;
+}
+
+/* end services button */
+/* start expert button */
+.experts .expert-btn {
+  margin-top: 30%;
+  text-align: left !important;
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .experts .expert-btn {
+    margin-top: 0;
+    text-align: right !important;
+  }
+}
+
+.experts .expert-btn .btn {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 10px 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.experts .expert-btn .btn:hover {
+  background: #ffffff;
+  color: #1c2b2d;
+}
+
+/* end expert button */
+/* start news heading */
+@media (min-width: 1200px) {
+  .news .news-btn {
+    text-align: left;
+    margin-top: 20px;
+  }
+}
+
+.news .news-btn .btn {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 10px 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.news .news-btn .btn:hover {
+  background: #ffffff;
+  color: #0f3461;
+}
+
+/* end news heading */
+/* satrt help button */
+.help .help-btn {
+  margin-top: 11%;
+  text-align: left !important;
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .help .help-btn {
+    margin-top: 0;
+    text-align: right !important;
+  }
+}
+
+.help .help-btn .btn {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 10px 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.help .help-btn .btn:hover {
+  background: #ffffff;
+  color: #1c2b2d;
+}
+
+/* end help button */
+.record form .btn-block {
+  background: #0f3461;
+  color: #ffffff;
+  padding: 12px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.record form .btn-block:hover {
+  background: #1c2b2d;
+}
+
+.contact-us-form form .btn-block {
+  background: #0f3461;
+  color: #ffffff;
+  padding: 12px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-us-form form .btn-block:hover {
+  background: #1c2b2d;
+}
+
+/* start presidents [footer] */
+.presidents {
+  padding-top: 80px;
+  background: #0f3461;
+  /* start addresses */
+  /* end addresses */
+  /* start contact-us */
+  /* end contact-us */
+  /* start copyright */
+  /* end copyright */
+}
+
+.presidents .president {
+  position: relative;
+}
+
+.presidents .president:hover .pres-overlay {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.presidents .president .pres-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  padding: 25px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presidents .president .pres-overlay p {
+  color: #0f3461;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.presidents .president .pres-overlay span {
+  color: #E8110F;
+  font-family: "Harmattan";
+  font-size: 20px;
+}
+
+.presidents .president .pres-img {
+  margin-bottom: 30px;
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(28, 43, 45, 0.5));
+          filter: drop-shadow(0px 0px 5px rgba(28, 43, 45, 0.5));
+}
+
+.presidents .president .pres-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.presidents .address-row {
+  padding-top: 80px;
+}
+
+.presidents .address-row .addresses {
+  margin-bottom: 40px;
+  /* make map responsive from w3schools */
+}
+
+.presidents .address-row .addresses h5 {
+  padding: 20px 0;
+  color: #ffffff;
+  position: relative;
+}
+
+.presidents .address-row .addresses h5::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 2px;
+  background: #E8110F;
+}
+
+.presidents .address-row .addresses ul {
+  direction: ltr;
+}
+
+.presidents .address-row .addresses ul li {
+  padding: 10px 5px;
+}
+
+.presidents .address-row .addresses ul li a {
+  position: relative;
+  margin-right: 15px;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.presidents .address-row .addresses ul li a:hover {
+  text-decoration: none;
+  color: #f9813a;
+}
+
+.presidents .address-row .addresses ul li a::after {
+  content: "\f104";
+  position: absolute;
+  right: -17px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.presidents .address-row .addresses .map {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.presidents .address-row .addresses .map .responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.presidents .address-row .addresses .logo-footer {
+  padding: 40px 0;
+}
+
+.presidents .contact-row .col-lg-4 {
+  padding-right: 0;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.presidents .contact-row .media {
+  height: 75px;
+  background: #f9813a;
+  color: #ffffff;
+  padding: 5px 19px;
+  color: #0f3461;
+}
+
+.presidents .contact-row .media i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: rgba(245, 162, 93, 0.8);
+  color: #ffffff;
+}
+
+.presidents .contact-row .media .media-body h6 {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.presidents .contact-row .media .media-body a {
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.presidents .contact-row .media .media-body a:hover {
+  text-decoration: none;
+  color: #0f3461;
+}
+
+.presidents .contact-row .tel {
+  background: #2d6187;
+  color: #f9813a;
+}
+
+.presidents .contact-row .tel i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: rgba(15, 52, 97, 0.5);
+  color: #ffffff;
+}
+
+.presidents .copyright-row .copyright {
+  padding: 40px 0;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.presidents .copyright-row .copyright a {
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.presidents .copyright-row .copyright a:hover {
+  text-decoration: none;
+  color: #f9813a;
+}
+
+/* end presidents [footer] */
+/*# sourceMappingURL=homepage.css.map */

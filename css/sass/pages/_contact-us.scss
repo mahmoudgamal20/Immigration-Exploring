@@ -1,0 +1,72 @@
+/* start contact-us map */
+
+.contact-us-map {
+    .map {
+        @include iframeMap2;
+    }
+}
+
+
+/* end contact-us map */
+
+
+/* start contact-us form */
+
+.contact-us-form {
+    margin: $mainMargin 0;
+    h2 {
+        // styled in headings sheet
+    }
+    form {
+        .form-row {
+            .form-control {
+                @include mainFormControl;
+            }
+            .area {
+                height: 100px;
+            }
+        }
+        .btn-block {
+            // styled in buttons sheet
+        }
+    }
+}
+
+
+/* end contact-us form */
+
+
+/* start more-info */
+
+.more-info {
+    margin: $mainMargin/2 0;
+    .media {
+        background: $darkColor;
+        color: $mainBackground;
+        padding: 15px 5px;
+        i {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: $secBackground;
+        }
+        .media-body {
+            margin-right: 15px;
+            p,
+            span {
+                color: $borderColor;
+                font: {
+                    size: 20px;
+                    family: $secFont;
+                }
+            }
+        }
+    }
+    .second {
+        background: $secColor;
+    }
+}
+
+
+/* end more-info */

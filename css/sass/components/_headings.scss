@@ -1,0 +1,272 @@
+/* start skitter slider heading */
+
+header {
+    .label_skitter {
+        h1 {
+            color: $darkColor;
+            background: $mainBackground;
+            padding: 20px;
+            display: inline-block;
+            span {
+                color: $secColor;
+            }
+        }
+    }
+}
+
+
+/* end skitter slider heading */
+
+
+/* start carousel heading */
+
+.hidden-carousel {
+    .carousel {
+        .carousel-caption {
+            @media(min-width: $xLarge) {
+                z-index: -1;
+            }
+            @media(min-width: $phone) and(max-width: $small) {
+                bottom: 15px;
+            }
+            h4 {
+                @media(min-width: $phone) and(max-width: $small) {
+                    font-size: 16px;
+                    background: $mainBackground;
+                    color: $darkColor;
+                    padding: 5px;
+                }
+                @media(min-width: $small) and(max-width: $xLarge) {
+                    color: $darkColor;
+                    background: $mainBackground;
+                    padding: 10px;
+                    display: inline-block;
+                }
+                span {
+                    @media(min-width: $phone) and(max-width: $xLarge) {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* end carousel heading */
+
+
+/* start about-us heading */
+
+.about-us {
+    .about-info {
+        h2 {
+            @include mainHeading;
+        }
+    }
+}
+
+
+/* end about-us heading */
+
+
+/* start services heading */
+
+.our-services {
+    h2 {
+        @include serviceHeading;
+    }
+}
+
+
+/* end services heading */
+
+
+/* start expert heading */
+
+.experts {
+    .expert-info {
+        h2 {
+            @include expertHeading;
+        }
+    }
+}
+
+
+/* end expert heading */
+
+
+/* start countries heading */
+
+.countries {
+    h2 {
+        @include countriesHeading;
+    }
+}
+
+
+/* end countries heading */
+
+
+/* start testimonials heading */
+
+.testimonials {
+    .testim-info {
+        h2 {
+            @include testimHeading;
+        }
+    }
+}
+
+
+/* end testimonials heading */
+
+
+/* start news heading */
+
+.news {
+    .news-info {
+        h2 {
+            @include serviceHeading;
+        }
+    }
+}
+
+
+/* end news heading */
+
+
+/* start license heading */
+
+.license {
+    .license-info {
+        h2 {
+            @include mainHeading;
+        }
+    }
+}
+
+
+/* end license heading */
+
+
+/* start videos heading */
+
+.videos {
+    h2 {
+        @include mainHeading;
+    }
+}
+
+
+/* end videos heading */
+
+/////////////////////////////////////  hegra-programs  /////////////////////////////////////////////////////
+
+/* start hegra-business heading */
+
+.hegra {
+    h1 {
+        @include serviceHeading;
+    }
+}
+
+
+/* end hegra-business heading */
+
+
+/* start hegra-program heading */
+
+.hegra-program {
+    h2 {
+        @include mainHeading;
+    }
+}
+
+
+/* end hegra-program heading */
+
+
+/* start hegra-workers heading */
+
+.hegra-workers {
+    h2 {
+        @include mainHeading;
+    }
+    .ex-workers {
+        h4 {
+            @include mainHeading;
+        }
+    }
+}
+
+
+/* end hegra-workers heading */
+
+
+/* start hegra-countries */
+
+.hegra-countries {
+    h3 {
+        @include serviceHeading;
+    }
+}
+
+
+/* end hegra-countries */
+
+/////////////////////////////////////  about-us  /////////////////////////////////////////////////////
+
+/* start team work heading */
+
+.team-work {
+    h2 {
+        @include mainHeading;
+    }
+}
+
+
+/* end team work heading */
+
+
+/* start help heading */
+
+.help {
+    .help-info {
+        h3 {
+            @include expertHeading;
+        }
+    }
+}
+
+
+/* end help heading */
+
+
+/* start choose us heading */
+
+.choose-us {
+    .choose-overlay {
+        @include chooseOverlay;
+        h2 {
+            @include serviceHeading;
+        }
+    }
+}
+
+
+/* end choose us heading */
+
+/////////////////////////////////////  record-info  /////////////////////////////////////////////////////
+.record {
+    h2 {
+        @include mainHeading;
+    }
+}
+
+/////////////////////////////////////  contact-us  /////////////////////////////////////////////////////
+.contact-us-form {
+    h2 {
+        @include mainHeading;
+    }
+}

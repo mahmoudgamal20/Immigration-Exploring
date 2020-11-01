@@ -1,0 +1,70 @@
+/* start hegra  */
+
+.hegra-workers {
+    // styled in header sheet
+}
+
+
+/* end hegra  */
+
+
+/* start hegra workers */
+
+.hegra-workers {
+    margin: $mainMargin/2 0;
+    .hegra-vid {
+        filter: $dropShadow;
+        padding-bottom: $mainMargin/2;
+    }
+    .hegra-info {
+        h2 {
+            // styled in heading sheet
+        }
+        p {
+            @include mainParagraph;
+        }
+    }
+    .excellent-workers {
+        width: 70%;
+        background: $mainBackground;
+        filter: $dropShadow2;
+        padding: 25px;
+        margin: 30px 0;
+        @media(min-width: $phone)and(max-width: $large) {
+            width: 100%;
+        }
+        .ex-workers {
+            h4 {
+                // styled in headings sheet
+            }
+            p {
+                @include mainParagraph;
+            }
+        }
+    }
+    .hegra-requirements {
+        .hegra-collapse {
+            p {
+                .btn {
+                    color: $secColor;
+                    font: {
+                        family: $secFont;
+                        size: 20px;
+                    }
+                    &:before {
+                        content: "\f055";
+                        font: {
+                            family: "Font Awesome 5 Free";
+                            weight: $veryBold;
+                            size: 14px;
+                        }
+                    }
+                }
+            }
+            .collapse {}
+        }
+    }
+}
+
+
+/* end hegra workers */

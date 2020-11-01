@@ -1,0 +1,301 @@
+/* nav button */
+
+@mixin navButton {
+    background: transparent;
+    padding: 10px 30px;
+    color: $mainBackground;
+    border: 1px solid $mainBackground;
+    border-radius: 25px;
+    margin-left: 15px;
+    transition: $transition3s;
+    @media(min-width: $phone)and(max-width: $small) {
+        padding: 10px;
+        color: $mainBackground;
+        border-radius: 5px;
+        margin-left: 15px;
+    }
+    &:hover {
+        background: $darkColor;
+        border: 1px solid $darkColor;
+    }
+}
+
+
+/* center */
+
+@mixin centerElement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* main hover */
+
+@mixin mainHover {
+    text-decoration: none;
+    color: $hoverColor;
+}
+
+
+/* main span */
+
+@mixin mainSpan {
+    color: $mainColor;
+    font: {
+        family: $secFont;
+        size: 20px;
+    }
+}
+
+
+/* main heading */
+
+@mixin mainHeading {
+    margin: 30px 0;
+    color: $secColor;
+}
+
+
+/* main paragraph */
+
+@mixin mainParagraph {
+    color: $grayColor;
+    line-height: 1.7;
+}
+
+
+/*  main media */
+
+@mixin mainMedia {
+    margin: 30px 0;
+    position: relative;
+    &:hover .i-square {
+        width: 60px;
+    }
+    .i-square {
+        position: absolute;
+        top: -7px;
+        right: 3px;
+        width: 30px;
+        height: 80px;
+        border: 2px solid $borderColor;
+        border-radius: 3px;
+        transition: $transition3s;
+        z-index: -1;
+    }
+    i {
+        padding: 15px;
+        color: $hoverColor;
+    }
+    .media-body {
+        h5 {
+            color: $secColor;
+        }
+    }
+}
+
+
+/* service overlay */
+
+@mixin serviceOverlay {
+    min-height: 700px;
+    width: 100%;
+    background: rgba($secColor, 0.9);
+    padding: $mainMargin 0;
+}
+
+
+/* service span */
+
+@mixin serviceSpan {
+    color: $hoverColor;
+    font: {
+        family: $secFont;
+        size: 25px;
+    }
+}
+
+
+/* service heading */
+
+@mixin serviceHeading {
+    margin: 10px 0 50px;
+    color: $mainBackground;
+}
+
+
+/* service paragraph */
+
+@mixin serviceParagraph {
+    color: $borderColor;
+    line-height: 1.8;
+    font: {
+        family: $secFont;
+        size: 18px;
+    }
+}
+
+
+/* expert heading */
+
+@mixin expertHeading {
+    margin: 30px 0;
+    color: $mainBackground;
+}
+
+
+/* expert button */
+
+@mixin expertButton {
+    margin-top: 30%;
+    text-align: left !important;
+    @media(min-width: $phone) and(max-width: $large) {
+        margin-top: 0;
+        text-align: right !important;
+    }
+    .btn {
+        color: $mainBackground;
+        border: 1px solid $mainBackground;
+        padding: 10px 30px;
+        transition: $transition3s;
+        &:hover {
+            background: $mainBackground;
+            color: $darkColor;
+        }
+    }
+}
+
+
+/* countries heading */
+
+@mixin countriesHeading {
+    margin: 10px 0 60px;
+    color: $secColor;
+}
+
+
+/* testimonials heading */
+
+@mixin testimHeading {
+    margin: 10px 0 30px;
+    color: $secColor;
+}
+
+
+/* president overlay */
+
+@mixin preOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($mainBackground, 0.8);
+    border-radius: 5px;
+    transform: scale(0);
+    transition: $transition5s;
+    padding: 25px;
+    z-index: 1;
+    @include centerElement;
+}
+
+
+/* responsive iframe map */
+
+@mixin iframeMap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 100%;
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/***************** hegra business  *******************/
+
+
+/* spans for hegra pages */
+
+@mixin hegraSpan {
+    color: $grayColor;
+    margin-bottom: 20px;
+    display: block;
+    font: {
+        size: 20px;
+        family: $secFont;
+    }
+}
+
+
+/*************** about us ********************/
+
+
+/* overlay for choose page */
+
+@mixin chooseOverlay {
+    min-height: 700px;
+    width: 100%;
+    background: rgba($darkColor, 0.8);
+    padding: $mainMargin 0;
+}
+
+
+/*************** record-info ********************/
+
+
+/* form control record-info page */
+
+@mixin mainFormControl {
+    margin-bottom: 20px;
+    color: $secColor;
+    height: 52px;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+@mixin formButton {
+    background: $secColor;
+    color: $mainBackground;
+    padding: 12px;
+    transition: $transition3s;
+    &:hover {
+        background: $darkColor;
+    }
+}
+
+
+/*************** contact us ********************/
+
+
+/* responsive contact-us page iframe map */
+
+@mixin iframeMap2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 100%;
+    padding-bottom: 0;
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 30%;
+        @media(min-width: $phone)and(max-width: $medium) {
+            height: 50%;
+        }
+    }
+}

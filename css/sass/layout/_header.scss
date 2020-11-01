@@ -1,0 +1,80 @@
+/* start header */
+
+header {
+    z-index: 5;
+    position: relative;
+    .skitter {
+        right: 0;
+        .label_skitter {
+            bottom: 35%;
+            background: none;
+            display: inline-block;
+            h1 {
+                // styled in headings sheet
+            }
+            .skitter-btn {
+                // styled in buttons sheet
+            }
+        }
+    }
+}
+
+
+/* end header */
+
+
+/* start hidden carousel */
+
+.hidden-carousel {
+    .carousel {
+        .carousel-caption {
+            h4 {
+                // styled in headings sheet
+            }
+            .carousel-btn {
+                .btn {
+                    // styled in buttons sheet
+                }
+            }
+        }
+        .carousel-control-prev-icon {
+            background-image: url(../img/previous-arrow.svg);
+        }
+        .carousel-control-next-icon {
+            background-image: url(../img/next-arrow.svg);
+        }
+    }
+}
+
+
+/* end hiddden carousel */
+
+/////////////////////////////////////  hegra  /////////////////////////////////////////////////////
+
+/* start hegra header */
+
+.hegra {
+    background-image: url(../img/hegra-business.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 600px;
+    @include centerElement;
+    .hegra-overlay {
+        min-height: 600px;
+        width: 100%;
+        background: rgba($darkColor, 0.5);
+        @include centerElement;
+        .hegra-head {
+            h1 {
+                // styled in headings sheet
+            }
+            span {
+                color: $hoverColor;
+            }
+        }
+    }
+}
+
+
+/* end hegra header */

@@ -1,0 +1,43 @@
+/* colors */
+
+$mainBackground:#ffffff;
+$mainColor:#E8110F;
+$secColor:#0f3461;
+$hoverColor:#f9813a;
+$darkColor:#1c2b2d;
+$grayColor:#777777;
+$borderColor:#cccccc;
+$secBackground: rgba($borderColor, 0.2);
+
+/* transition */
+
+$transition3s:all 0.3s ease-in-out;
+$transition5s:all 0.5s ease-in-out;
+
+/* font-family */
+
+$mainFont:"Almarai";
+$secFont:"Harmattan";
+
+/* font-weight */
+
+$semiBold:600;
+$veryBold:900;
+
+/* margin */
+
+$mainMargin:100px;
+
+/* drop shadow */
+
+$dropShadow:drop-shadow(0px 0px 5px rgba($darkColor, 0.5));
+$dropShadow2:drop-shadow(0px 0px 10px rgba($borderColor, 0.5));
+
+/* media queries */
+
+$phone:320px;
+$small:500px;
+$medium:576px;
+$maxMed:768px;
+$large:992px;
+$xLarge:1200px;

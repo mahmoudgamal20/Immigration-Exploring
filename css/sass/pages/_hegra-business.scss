@@ -1,0 +1,40 @@
+/* start hegra  */
+
+.hegra {
+    // styled in header sheet
+}
+
+
+/* end hegra  */
+
+
+/* start hegra program */
+
+.hegra-program {
+    margin-top: $mainMargin/2;
+    .hegra-vid {
+        filter: $dropShadow;
+        padding-bottom: $mainMargin/2;
+    }
+    .hegra-info {
+        h2 {
+            // styled in heading sheet
+        }
+        span {
+            @include hegraSpan;
+        }
+        p {
+            @include mainParagraph;
+        }
+        ul {
+            list-style: arabic-indic;
+            li {
+                padding-bottom: 20px;
+                color: $secColor;
+            }
+        }
+    }
+}
+
+
+/* end hegra program */
